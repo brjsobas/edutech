@@ -1,5 +1,15 @@
 # Changelog - Academia Void Vanilla MVC
 
+## [1.3.6] - 2024-01-13
+
+### 🐛 Corrección Rutas GitHub Pages
+- **Rutas corregidas**: Removido `../` de todas las rutas de assets
+- **Video**: Codificación URL para espacios (`%20`) en nombre de archivo
+- **Imágenes logos**: Corregidas 4 rutas de logos de clientes
+- **Imágenes equipo**: Corregidas 3 fotos del equipo
+- Todas las rutas ahora son relativas desde la raíz: `assets/...`
+- Compatible con GitHub Pages y servidores locales
+
 ## [1.3.5] - 2024-01-13
 
 ### 🔧 Ajustes Modal de Video

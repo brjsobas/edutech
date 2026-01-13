@@ -246,18 +246,18 @@ class DataModel {
                     {
                         name: 'Borja Sobas',
                         role: 'Tecnología y calidad',
-                        image: '../assets/images/250314_Borja_retrato.jpg',
+                        image: 'assets/images/250314_Borja_retrato.jpg',
                         description: 'Hace que la experiencia funcione: integra tecnología, contenidos y analítica para garantizar un entorno sólido, fluido y en mejora constante.',
                     },{
                         name: 'Nieves Ruíz',
                         role: 'Coordinación pedagógica',
-                        image: '../assets/images/Foto Nieves.jpg',
+                        image: 'assets/images/Foto Nieves.jpg',
                         description: 'Da forma al proyecto desde la estrategia educativa, alineando metodología, evaluación y experiencia de aprendizaje para que todo funcione con sentido, coherencia y calidad.',
                     },
                     {
                         name: 'Ginés Cánovas',
                         role: 'Diseño tecnopedagógico',
-                        image: '../assets/images/Foto empresa Gines.jpg',
+                        image: 'assets/images/Foto empresa Gines.jpg',
                         description: 'Transforma ideas y narrativas en experiencias formativas claras, atractivas y accesibles, cuidando cada paso del recorrido del alumnado.',
                     }
                 ]
@@ -285,10 +285,10 @@ class DataModel {
     // Inicializar logos de clientes
     initLogos() {
         return [
-            '<img alt="Universidad Valenciana" title="Universidad Valenciana" src="../assets/images/logo_univ_valencia.webp" style="width: 100%; height: auto; max-width: 200px; object-fit: contain;">',
-            '<img alt="autodesk" title="autodesk" src="../assets/images/logo_autodesk.webp" style="width: 100%; height: auto; max-width: 200px; object-fit: contain;">',
-            '<img alt="Adobe" title="Adobe" src="../assets/images/adobe-certified-associate-web-deusto.webp" style="width: 100%; height: auto; max-width: 200px; object-fit: contain;">',
-            '<img alt="Universidad de Salamanca" title="Universidad de Salamanca" src="../assets/images/logo-color-horizontal-universidad-d-salamanca.webp" style="width: 100%; height: auto; max-width: 200px; object-fit: contain;">'
+            '<img alt="Universidad Valenciana" title="Universidad Valenciana" src="assets/images/logo_univ_valencia.webp" style="width: 100%; height: auto; max-width: 200px; object-fit: contain;">',
+            '<img alt="autodesk" title="autodesk" src="assets/images/logo_autodesk.webp" style="width: 100%; height: auto; max-width: 200px; object-fit: contain;">',
+            '<img alt="Adobe" title="Adobe" src="assets/images/adobe-certified-associate-web-deusto.webp" style="width: 100%; height: auto; max-width: 200px; object-fit: contain;">',
+            '<img alt="Universidad de Salamanca" title="Universidad de Salamanca" src="assets/images/logo-color-horizontal-universidad-d-salamanca.webp" style="width: 100%; height: auto; max-width: 200px; object-fit: contain;">'
         ];
     }
 
