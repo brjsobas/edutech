@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edutech - Aprende diferente. Vive la experiencia.</title>
+    <meta name="description" content="Cursos inmersivos y gamificados que transforman el aprendizaje en una aventura inolvidable.">
+    <meta name="author" content="Edutech">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Edutech">
+    <meta property="og:description" content="Cursos inmersivos y gamificados que transforman el aprendizaje en una aventura inolvidable.">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Modal Pop-up -->
+     <!--
+    <div id="disclaimerModal" class="modal-overlay">
+        <div class="modal-content">
+            <h2 class="modal-title">Esta página es un ejercicio para la asignatura M1.145 - Diseño y gestión de proyectos de e-learning del MÁSTER UNIVERSITARIO DE EDUCACIÓN Y TIC</h2>
+            <p class="modal-text">Web conceptual creada como demostración de un proyecto. No representa una empresa ni una oferta comercial activa.</p>
+            <button id="modalContinueBtn" class="modal-button">Continuar</button>
+        </div>
+    </div>
+-->
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="video-modal-overlay">
+        <div class="video-modal-content">
+            <button id="closeVideoModal" class="video-modal-close" aria-label="Cerrar video">
+                <span>×</span>
+            </button>
+            <div class="video-container">
+                <video id="videoPlayer" controls>
+                    <source src="assets/video/Reel_SusurrosDelVacio.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de videos.
+                </video>
+            </div>
+        </div>
+    </div>
+    <!-- Countdown Banner -->
+    <div id="countdownBanner" class="countdown-banner">
+        <div class="countdown-banner-container">
+            <div class="countdown-banner-content">
+                <div class="countdown-banner-text">
+                    <span class="countdown-emoji">🎓</span>
+                    <span class="countdown-message">Obten un descuento del 30%. No esperes!</span>
+                </div>
+                <div class="countdown-timer">
+                    <div class="countdown-box">
+                        <span class="countdown-number" id="hoursCountdown">00</span>
+                        <span class="countdown-label">h</span>
+                    </div>
+                    <span class="countdown-separator">:</span>
+                    <div class="countdown-box">
+                        <span class="countdown-number" id="minutesCountdown">00</span>
+                        <span class="countdown-label">m</span>
+                    </div>
+                    <span class="countdown-separator">:</span>
+                    <div class="countdown-box">
+                        <span class="countdown-number" id="secondsCountdown">00</span>
+                        <span class="countdown-label">s</span>
+                    </div>
+                </div>
+                <a href="#/cursos" class="countdown-cta" data-link>Matricúlate</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="container">
+            <a href="#/" class="logo">
+                <img src="assets/images/EduTech_logo.png" alt="Edutech" class="logo-image">
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+            <div class="nav-menu" id="navMenu">
+                <a href="#/" class="nav-link" data-link>Inicio</a>
+                <a href="#/sobre-nosotros" class="nav-link" data-link>Sobre Nosotros</a>
+                <a href="#/metodologia" class="nav-link" data-link>Metodología</a>
+                <a href="#/cursos" class="nav-link" data-link>Cursos</a>
+                <a href="#/faq" class="nav-link" data-link>FAQ</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="app"></main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Edutech</h3>
+                    <p class="footer-text">
+                        Transformando el aprendizaje a través de experiencias inmersivas y gamificadas.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Enlaces</h4>
+                    <ul class="footer-links">
+                        <li><a href="#/" data-link>Inicio</a></li>
+                        <li><a href="#/sobre-nosotros" data-link>Sobre Nosotros</a></li>
+                        <li><a href="#/metodologia" data-link>Metodología</a></li>
+                        <li><a href="#/cursos" data-link>Cursos</a></li>
+                        <li><a href="#/faq" data-link>FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Contacto</h4>
+                    <p class="footer-text">Email: edutech@gmail.com</p>
+                    <p class="footer-text">Tel: +00 123 456 789</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Edutech. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts - MVC Architecture -->
+    <script src="js/countdown.js"></script>
+    <script src="js/video-modal.js"></script>
+    <script src="js/modal.js"></script>
+    <script type="module" src="js/models/data.js"></script>
+    <script type="module" src="js/views/view.js"></script>
+    <script type="module" src="js/controllers/controller.js"></script>
+    <script type="module" src="js/router.js"></script>
+    <script type="module" src="js/app.js"></script>
+</body>
+</html> 
