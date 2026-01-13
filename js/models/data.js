@@ -246,18 +246,18 @@ class DataModel {
                     {
                         name: 'Borja Sobas',
                         role: 'Tecnología y calidad',
-                        image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop',
+                        image: '../assets/images/250314_Borja_retrato.jpg',
                         description: 'Hace que la experiencia funcione: integra tecnología, contenidos y analítica para garantizar un entorno sólido, fluido y en mejora constante.',
                     },{
                         name: 'Nieves Ruíz',
                         role: 'Coordinación pedagógica',
-                        image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop',
+                        image: '../assets/images/Foto Nieves.jpg',
                         description: 'Da forma al proyecto desde la estrategia educativa, alineando metodología, evaluación y experiencia de aprendizaje para que todo funcione con sentido, coherencia y calidad.',
                     },
                     {
                         name: 'Ginés Cánovas',
                         role: 'Diseño tecnopedagógico',
-                        image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop',
+                        image: '../assets/images/Foto empresa Gines.jpg',
                         description: 'Transforma ideas y narrativas en experiencias formativas claras, atractivas y accesibles, cuidando cada paso del recorrido del alumnado.',
                     }
                 ]
